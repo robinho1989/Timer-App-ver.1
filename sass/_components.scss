@@ -1,0 +1,30 @@
+@import './colors';
+.counting {
+	background-color: $btnColor;
+	.main__label {
+		opacity: 0;
+	}
+	.main__input {
+		background-color: $setBacground;
+	}
+	.main__text {
+		opacity: 0;
+		z-index: -5;
+	}
+	.main__button {
+		&--start {
+			opacity: 0;
+			z-index: -5;
+		}
+	}
+}
+.end-view {
+    background-color: gray;
+    z-index: 7;
+    .main__text{
+        &--up{
+            opacity: 1;
+        }
+    }
+// dodałem tą klasę, żeby móc otrzymać ekran z końcem odliczania, ale mimo tego, że styluję to w przeglądarce nie widzę żadnego efektu, no może poza przykładowym kolorem tła i z-index'em. Kiedy próbuję stylować w podobny sposób co klase "counting" to nie widzę żadnego rezultatu
+}
